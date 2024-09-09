@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>This is a brief description of myself and my skills.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Here's how to contact me:</p>
+    <ul>
+      <li>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></li>  <li>Phone: 123-456-7890</li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/your_linkedin_profile">your_linkedin_profile</a></li> </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Name</p>
+  </footer>
+</body>
+</html>
